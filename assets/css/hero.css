@@ -214,6 +214,7 @@
 }
 
 .ticker-item svg { width: 14px; height: 14px; color: var(--color-primary); flex-shrink: 0; }
+
 @keyframes tickerScroll {
   0% {
     transform: translateX(0);
@@ -223,13 +224,23 @@
   }
 }
 
+[dir="rtl"] .ticker-track {
+  animation-name: tickerScrollRTL;
+}
+
+@keyframes tickerScrollRTL {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
 @media (max-width: 900px) {
   .hero-inner {
     grid-template-columns: 1fr;
   }
-}
-.ticker-bar:hover .ticker-track {
-  animation-play-state: paused;
 }
 
 /* Exception to the sitewide prefers-reduced-motion reset in base.css:
