@@ -30,7 +30,7 @@
             <p class="hero-subtext">${escapeHtml(subtext)}</p>
             <div class="hero-cta-row">
               <a href="${escapeHtml(slide.CTAUrl)}" class="btn btn-primary">${escapeHtml(ctaLabel)}</a>
-              <a href="market.html" class="btn btn-outline" data-i18n="hero.cta_secondary">${escapeHtml(window.I18n.t('hero.cta_secondary'))}</a>
+              <a href="/market" class="btn btn-outline" data-i18n="hero.cta_secondary">${escapeHtml(window.I18n.t('hero.cta_secondary'))}</a>
             </div>
           </div>`;
       })
