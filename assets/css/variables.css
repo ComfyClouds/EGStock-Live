@@ -1,0 +1,118 @@
+/* =========================================================
+   Economic Group — Design System
+   Global CSS Custom Properties
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* ---------- Brand Colors (from Economic Group logo) ---------- */
+  --color-primary: #0F5FA6;
+  --color-primary-dark: #0A3D6E;
+  --color-primary-light: #4B93D1;
+  --color-primary-50: #EAF3FB;
+
+  --color-dark: #0A2647;
+  --color-dark-soft: #123259;
+  --color-dark-elevated: #1B426E;
+
+  --color-bg: #F6F8FA;
+  --color-white: #FFFFFF;
+
+  --color-text: #1B2733;
+  --color-text-muted: #5B6B7C;
+  --color-text-inverse: #F6F8FA;
+
+  --color-success: #128A5E;
+  --color-success-bg: #E9F8F2;
+  --color-danger: #D14848;
+  --color-danger-bg: #FDECEC;
+  --color-warning: #C58A17;
+  --color-warning-bg: #FBF3E2;
+
+  --color-border: #E1E7EE;
+  --color-border-dark: rgba(255, 255, 255, 0.12);
+
+  /* ---------- Glassmorphism ---------- */
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --glass-bg-dark: rgba(10, 38, 71, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.35);
+  --glass-blur: blur(16px);
+
+  /* ---------- Typography ---------- */
+  --font-en: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-ar: 'Noto Sans Arabic', 'Inter', sans-serif;
+
+  --fs-xs: 0.75rem;    /* 12px */
+  --fs-sm: 0.875rem;   /* 14px */
+  --fs-base: 1rem;     /* 16px */
+  --fs-md: 1.125rem;   /* 18px */
+  --fs-lg: 1.25rem;    /* 20px */
+  --fs-xl: 1.5rem;     /* 24px */
+  --fs-2xl: 1.875rem;  /* 30px */
+  --fs-3xl: 2.375rem;  /* 38px */
+  --fs-4xl: 3rem;      /* 48px */
+
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.75;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  /* ---------- Spacing (4/8pt scale) ---------- */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.5rem;   /* 24px */
+  --space-6: 2rem;     /* 32px */
+  --space-7: 3rem;     /* 48px */
+  --space-8: 4rem;     /* 64px */
+  --space-9: 6rem;     /* 96px */
+
+  /* ---------- Radius ---------- */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 999px;
+
+  /* ---------- Shadows ---------- */
+  --shadow-sm: 0 1px 2px rgba(10, 38, 71, 0.06);
+  --shadow-md: 0 8px 24px rgba(10, 38, 71, 0.08);
+  --shadow-lg: 0 16px 40px rgba(10, 38, 71, 0.12);
+  --shadow-primary: 0 12px 28px rgba(15, 95, 166, 0.28);
+  --shadow-focus: 0 0 0 3px rgba(15, 95, 166, 0.35);
+
+  /* ---------- Motion ---------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 150ms;
+  --dur-base: 250ms;
+  --dur-slow: 400ms;
+
+  /* ---------- Layout ---------- */
+  --container-max: 1280px;
+  --header-height: 84px;
+  --header-height-scrolled: 68px;
+
+  /* ---------- Z-Index Scale ---------- */
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 400;
+  --z-modal: 500;
+  --z-toast: 600;
+  --z-tooltip: 700;
+}
+
+/* Dark-elevated surfaces (hero, footer) get their own token aliases */
+[data-surface="dark"] {
+  --color-text: var(--color-text-inverse);
+  --color-text-muted: #A6ADBB;
+  --color-border: var(--color-border-dark);
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stocks & Market — Economic Group</title>
+  <meta name="description" content="Live EGX indices, top gainers and losers, and the full list of Egyptian Exchange stocks.">
+  <meta name="theme-color" content="#0A2647">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.stock-example.com/market.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Stocks & Market — Economic Group">
+  <meta property="og:description" content="Live EGX indices, top gainers and losers, and the full list of Egyptian Exchange stocks.">
+  <meta property="og:url" content="https://www.stock-example.com/market.html">
+  <meta property="og:site_name" content="Economic Group">
+  <meta property="og:image" content="assets/images/og-cover.jpg">
+  <meta property="og:locale" content="ar_EG">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/brand/favicon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Design System -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/market.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body id="top" data-page="market">
+  <a href="#main-content" class="skip-link" data-i18n="common.back_to_top">Skip to content</a>
+
+  <div id="header-mount"></div>
+
+  <main id="main-content">
+
+    <!-- ============ PAGE HEADER ============ -->
+    <section class="page-header" aria-labelledby="market-page-title">
+      <div class="container">
+        <div class="section-header" style="margin-bottom:0;">
+          <span class="section-eyebrow" data-i18n="sections.market_overview_eyebrow">Real-Time</span>
+          <h1 class="section-title" id="market-page-title" data-i18n="pages.market.title">Stocks & Market</h1>
+          <p class="section-subtitle" data-i18n="sections.market_overview_subtitle">Track the indices that move the market, updated live from our trading desk.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARKET OVERVIEW ============ -->
+    <section class="section" id="markets" aria-labelledby="markets-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow" data-i18n="sections.market_overview_eyebrow">Real-Time</span>
+          <h2 class="section-title" id="markets-title" data-i18n="sections.market_overview_title">Market Overview</h2>
+          <p class="section-subtitle" data-i18n="sections.market_overview_subtitle">Track the indices that move the market, updated live from our trading desk.</p>
+        </div>
+
+        <div class="card tv-widget-shell" id="tv-indices-widget" aria-live="polite"></div>
+
+        <div style="margin-top: var(--space-7);">
+          <div class="ticker-tabs" id="ticker-tabs" role="tablist">
+            <button type="button" class="ticker-tab" data-ticker-tab="currencies" role="tab" aria-selected="true" data-i18n="sections.tickers_currencies">Currencies</button>
+            <button type="button" class="ticker-tab" data-ticker-tab="commodities" role="tab" aria-selected="false" data-i18n="sections.tickers_commodities">Commodities</button>
+          </div>
+          <div class="mini-ticker-grid" id="ticker-grid" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TOP GAINERS / LOSERS ============ -->
+    <section class="section" id="movers" style="background:var(--color-white);" aria-labelledby="movers-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow" data-i18n="sections.gainers_losers_eyebrow">Today's Movers</span>
+          <h2 class="section-title" id="movers-title" data-i18n="sections.gainers_losers_title">Top Gainers & Losers</h2>
+          <p class="section-subtitle" data-i18n="sections.gainers_losers_subtitle">The best and worst performing stocks in today's session.</p>
+        </div>
+
+        <div class="card tv-widget-shell" id="tv-movers-widget" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ============ ALL STOCKS ============ -->
+    <section class="section" id="stocks" aria-labelledby="stocks-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow" data-i18n="sections.stocks_eyebrow">Full List</span>
+          <h2 class="section-title" id="stocks-title" data-i18n="sections.stocks_title">All Stocks</h2>
+          <p class="section-subtitle" data-i18n="sections.stocks_subtitle">Search and track every listed stock in real time.</p>
+        </div>
+
+        <div class="card tv-widget-shell" id="tv-stocks-widget" aria-live="polite"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-mount"></div>
+  <div id="news-modal-mount"></div>
+
+  <button type="button" class="btn-icon" id="back-to-top" aria-label="Back to top" data-i18n-aria-label="common.back_to_top"
+    style="position:fixed; bottom:24px; inset-inline-end:24px; z-index:var(--z-toast); background:var(--color-dark); color:#fff; opacity:0; visibility:hidden; transition: opacity var(--dur-base) var(--ease-out), visibility var(--dur-base); box-shadow:var(--shadow-lg);">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </button>
+
+  <style>
+    #back-to-top.is-visible { opacity: 1; visibility: visible; }
+  </style>
+
+  <!-- Config & Utilities -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/sheetsApi.js"></script>
+  <script src="assets/js/skeleton.js"></script>
+  <script src="assets/js/lazyload.js"></script>
+  <script src="assets/js/partials.js"></script>
+
+  <!-- Components -->
+  <script src="components/newsCard.js"></script>
+  <script src="components/miniTickerCard.js"></script>
+  <script src="components/faqItem.js"></script>
+
+  <!-- Section Modules -->
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/hero.js"></script>
+  <script src="assets/js/liveMarketData.js"></script>
+  <script src="assets/js/tradingViewWidgets.js"></script>
+  <script src="assets/js/market.js"></script>
+  <script src="assets/js/news.js"></script>
+  <script src="assets/js/newsModal.js"></script>
+  <script src="assets/js/faq.js"></script>
+  <script src="assets/js/contact.js"></script>
+  <script src="assets/js/autoRefresh.js"></script>
+
+  <!-- Boot -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+/* =========================================================
+   Economic Group — Responsive Design
+   Breakpoints: 375 / 768 / 1024 / 1440
+   ========================================================= */
+
+/* FIX 2: remove blank left gap on Arabic (RTL) mobile.
+   Both html AND body need overflow-x:hidden — body alone
+   doesn't clip the root scroll container in RTL layouts. */
+html,
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1180px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding-inline: var(--space-4);
+  }
+
+  .section {
+    padding-block: var(--space-8);
+  }
+
+  h1 { font-size: var(--fs-3xl); }
+  h2 { font-size: var(--fs-2xl); }
+
+  .market-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 72px;
+    --header-height-scrolled: 62px;
+  }
+
+  /* iOS Safari auto-zooms on focus when an input's font-size is under 16px.
+     All text inputs/textareas get bumped to 16px on mobile viewports only,
+     so the desktop type scale (14px) is unaffected. */
+  .form-input,
+  .form-textarea,
+  .form-select,
+  .newsletter-input,
+  .stocks-search input,
+  .search-input {
+    font-size: 16px;
+  }
+
+  .section {
+    padding-block: var(--space-7);
+  }
+
+  .section-header {
+    margin-bottom: var(--space-5);
+  }
+
+  .hero {
+    padding-block-start: var(--space-6);
+    padding-block-end: 0;
+  }
+
+  .hero-headline {
+    font-size: var(--fs-2xl);
+  }
+
+  .hero-cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-cta-row .btn {
+    width: 100%;
+  }
+
+  .market-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+  }
+
+  .mini-ticker-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .market-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-actions {
+    gap: var(--space-2);
+  }
+
+  .market-pill {
+    display: none;
+  }
+
+  .promo-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--space-5);
+  }
+
+  .promo-banner-cta {
+    width: 100%;
+  }
+
+  .promo-banner-cta .btn {
+    width: 100%;
+  }
+
+  .news-modal-body {
+    padding: var(--space-4);
+  }
+
+  .news-modal-title {
+    font-size: var(--fs-xl);
+  }
+}
+
+/* Landscape phones */
+@media (max-width: 900px) and (orientation: landscape) {
+  .hero {
+    padding-block-start: var(--space-5);
+    padding-block-end: 0;
+  }
+}

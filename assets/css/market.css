@@ -1,0 +1,319 @@
+/* =========================================================
+   Economic Group — Market Components
+   (Market Overview tiles, Indices/Currencies/Commodities
+   tickers, Top Gainers/Losers, Stocks table)
+   ========================================================= */
+
+/* ---------- Market Overview Tiles ---------- */
+
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-4);
+}
+
+.market-tile {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.market-tile-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.market-tile-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary-50);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.market-tile-icon svg { width: 22px; height: 22px; }
+
+.market-tile-name {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  font-weight: var(--fw-medium);
+}
+
+.market-tile-value {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-extrabold);
+  color: var(--color-dark);
+}
+
+.market-tile-change {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  width: fit-content;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+}
+
+.market-tile-change.up { color: var(--color-success); background: var(--color-success-bg); }
+.market-tile-change.down { color: var(--color-danger); background: var(--color-danger-bg); }
+.market-tile-change.flat { color: var(--color-text-muted); background: var(--color-bg); }
+
+.market-tile-change svg { width: 14px; height: 14px; }
+.market-tile-change.down svg { transform: rotate(180deg); }
+
+/* ---------- TradingView Widget Shell ----------
+   Minimal integration wrapper — the widget itself (Market Overview,
+   Hotlists, Screener) renders TradingView's own branded UI inside an
+   iframe; this just keeps it visually consistent with the site's existing
+   .card pattern (rounded corners, border) instead of looking like a
+   foreign rectangle dropped onto the page. */
+
+.tv-widget-shell {
+  overflow: hidden;
+  padding: var(--space-2);
+  min-height: 200px;
+}
+
+.tv-widget-shell .tradingview-widget-container,
+.tv-widget-shell .tradingview-widget-container__widget {
+  width: 100%;
+}
+
+/* ---------- Mini Ticker Rows (Currencies / Commodities) ---------- */
+
+.ticker-tabs {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ticker-tab {
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-muted);
+  border-bottom: 2px solid transparent;
+  min-height: 44px;
+}
+
+.ticker-tab[aria-selected="true"] {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+.mini-ticker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-3);
+}
+
+.mini-ticker-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+}
+
+.mini-ticker-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.mini-ticker-code {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-sm);
+}
+
+.mini-ticker-name {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+}
+
+.mini-ticker-right {
+  text-align: end;
+}
+
+.mini-ticker-value {
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-sm);
+}
+
+.mini-ticker-percent {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+}
+
+.mini-ticker-percent.up { color: var(--color-success); }
+.mini-ticker-percent.down { color: var(--color-danger); }
+
+/* ---------- Gainers / Losers ---------- */
+
+.gainers-losers-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+.gl-panel {
+  padding: var(--space-5);
+}
+
+.gl-panel-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-md);
+}
+
+.gl-panel-header.gainers { color: var(--color-success); }
+.gl-panel-header.losers { color: var(--color-danger); }
+
+.gl-panel-header svg { width: 20px; height: 20px; }
+
+.gl-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.gl-row:last-child { border-bottom: none; }
+
+.gl-stock {
+  display: flex;
+  flex-direction: column;
+}
+
+.gl-symbol { font-weight: var(--fw-bold); font-size: var(--fs-sm); }
+.gl-name { font-size: var(--fs-xs); color: var(--color-text-muted); }
+
+.gl-figures { text-align: end; }
+.gl-price { font-weight: var(--fw-semibold); font-size: var(--fs-sm); }
+
+/* ---------- Stocks Table + Search ---------- */
+
+.stocks-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.stocks-search {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  min-width: 260px;
+}
+
+.stocks-search svg { width: 18px; height: 18px; color: var(--color-text-muted); flex-shrink: 0; }
+
+.stocks-search input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: var(--fs-sm);
+  width: 100%;
+}
+
+.stocks-table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+}
+
+.stocks-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+.stocks-table th {
+  text-align: start;
+  padding: var(--space-4);
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  background: var(--color-bg);
+  position: sticky;
+  top: 0;
+}
+
+.stocks-table th[scope="col"].numeric,
+.stocks-table td.numeric {
+  text-align: end;
+}
+
+.stocks-table td {
+  padding: var(--space-4);
+  font-size: var(--fs-sm);
+  border-top: 1px solid var(--color-border);
+}
+
+.stocks-table tbody tr {
+  transition: background var(--dur-fast) var(--ease-out);
+}
+
+.stocks-table tbody tr:hover {
+  background: var(--color-primary-50);
+}
+
+.stock-symbol-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.stock-symbol {
+  font-weight: var(--fw-bold);
+}
+
+.stock-name {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+}
+
+.stock-change-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-weight: var(--fw-semibold);
+}
+
+.stock-change-cell.up { color: var(--color-success); }
+.stock-change-cell.down { color: var(--color-danger); }
+.stock-change-cell svg { width: 14px; height: 14px; }
+.stock-change-cell.down svg { transform: rotate(180deg); }
+
+.stocks-empty {
+  padding: var(--space-8) var(--space-4);
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 780px) {
+  .gainers-losers-grid {
+    grid-template-columns: 1fr;
+  }
+}

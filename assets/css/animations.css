@@ -1,0 +1,147 @@
+/* =========================================================
+   Economic Group — Animations & Skeleton Loading States
+   ========================================================= */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideInEnd {
+  from { opacity: 0; transform: translateX(var(--slide-from, 24px)); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.55; transform: scale(0.85); }
+}
+
+@keyframes tickerScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.reveal {
+  opacity: 0;
+  animation: fadeUp var(--dur-slow) var(--ease-out) forwards;
+}
+
+.reveal[data-delay="1"] { animation-delay: 60ms; }
+.reveal[data-delay="2"] { animation-delay: 120ms; }
+.reveal[data-delay="3"] { animation-delay: 180ms; }
+.reveal[data-delay="4"] { animation-delay: 240ms; }
+.reveal[data-delay="5"] { animation-delay: 300ms; }
+.reveal[data-delay="6"] { animation-delay: 360ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    animation: none;
+  }
+}
+
+/* ---------- Skeleton Loaders ---------- */
+
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: #EAECEF;
+  border-radius: var(--radius-md);
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 400px 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton::after { animation: none; }
+}
+
+.skeleton-text {
+  height: 0.85em;
+  border-radius: var(--radius-sm);
+  margin-block: 0.25em;
+}
+
+.skeleton-title { height: 1.4em; width: 60%; }
+.skeleton-line { width: 100%; }
+.skeleton-line.short { width: 40%; }
+
+.skeleton-thumb {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  border-radius: var(--radius-lg);
+}
+
+.skeleton-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+}
+
+.skeleton-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+}
+
+/* ---------- Status Dot ---------- */
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: var(--radius-full);
+  background: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.status-dot.is-open {
+  background: var(--color-success);
+  animation: pulseDot 2s ease-in-out infinite;
+}
+
+.status-dot.is-closed {
+  background: var(--color-danger);
+}
+
+/* ---------- Spinner ---------- */
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2.5px solid rgba(255, 255, 255, 0.35);
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}

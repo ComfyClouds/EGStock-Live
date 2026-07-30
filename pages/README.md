@@ -1,0 +1,1 @@
+This folder is reserved for future standalone pages (e.g. full About, single-stock detail pages). The current build is a single-page site (index.html) with in-page sections and a news modal, per the master prompt's 'modal popup instead of separate page' requirement.

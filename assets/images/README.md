@@ -1,0 +1,1 @@
+Place production images here (news photos, slider backgrounds, OG cover, etc). The sample-data.json currently references hosted Unsplash URLs as placeholders — swap these for real assets and update the Google Sheet Image columns accordingly.

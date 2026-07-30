@@ -1,0 +1,71 @@
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="/EGStock-Live/" class="brand" aria-label="Economic Group — Home">
+      <span class="brand-mark">
+        <img src="assets/images/brand/eg-icon.png" alt="" width="43" height="44">
+      </span>
+      <span data-i18n="brand.name">Economic Group</span>
+    </a>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <!-- Populated dynamically by header.js from the Navigation sheet -->
+    </nav>
+
+    <div class="header-actions">
+      <div class="market-pill" id="market-pill">
+        <span class="status-dot" id="market-status-dot"></span>
+        <span id="market-status-label">—</span>
+      </div>
+
+      <button type="button" class="search-toggle" id="search-toggle" aria-label="Search" data-i18n-aria-label="header.search_placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </button>
+
+      <div class="lang-switch" role="group" aria-label="Language switcher">
+        <button type="button" class="lang-option" data-lang-option="ar" aria-pressed="false">AR</button>
+        <button type="button" class="lang-option" data-lang-option="en" aria-pressed="false">EN</button>
+      </div>
+
+      <a href="https://www.eg-broktrade.com/NewLogin.aspx?ReturnUrl=%2f" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" data-i18n="nav.live_trading">Online Live Trading</a>
+
+      <a href="/EGStock-Live/pages/signup" class="btn btn-primary btn-sm" data-i18n="nav.open_account">Open Account</a>
+
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="7" x2="20" y2="7"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="17" x2="20" y2="17"></line></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- TradingView Ticker Tape — scrolling EGX stock price strip, shown directly under the header -->
+<div class="tv-ticker-tape-wrap" id="tv-ticker-tape"></div>
+
+<!-- Search Overlay -->
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search">
+  <div class="search-box">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input type="search" id="search-input" class="search-input" data-i18n-placeholder="header.search_placeholder" placeholder="Search stocks, news, or pages…" autocomplete="off">
+      <button type="button" class="btn-icon" id="search-close" aria-label="Close search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+    </div>
+    <div class="search-results" id="search-results"></div>
+  </div>
+</div>
+
+<!-- Mobile Drawer -->
+<div class="mobile-drawer-backdrop" id="mobile-drawer-backdrop"></div>
+<aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile navigation">
+  <div class="mobile-drawer-header">
+    <span class="brand" data-i18n="brand.name">Economic Group</span>
+    <button type="button" class="btn-icon" id="mobile-drawer-close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+  </div>
+  <nav id="mobile-nav" aria-label="Mobile Primary"></nav>
+  <div style="margin-top:auto; display:flex; flex-direction:column; gap:12px; padding-top:16px;">
+    <div class="lang-switch" role="group" aria-label="Language switcher" style="align-self:flex-start;">
+      <button type="button" class="lang-option" data-lang-option="ar" aria-pressed="false">AR</button>
+      <button type="button" class="lang-option" data-lang-option="en" aria-pressed="false">EN</button>
+    </div>
+    <a href="https://www.eg-broktrade.com/NewLogin.aspx?ReturnUrl=%2f" class="btn btn-outline" target="_blank" rel="noopener noreferrer" data-i18n="nav.live_trading">Online Live Trading</a>
+    <a href="pages/signup.html" class="btn btn-primary" data-i18n="nav.open_account">Open Account</a>
+  </div>
+</aside>

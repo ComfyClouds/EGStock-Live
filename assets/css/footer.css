@@ -1,0 +1,188 @@
+/* =========================================================
+   Economic Group — Footer & Banners
+   ========================================================= */
+
+.site-footer {
+  background: var(--color-dark);
+  color: #B7BECC;
+  padding-top: var(--space-8);
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.3fr repeat(3, 1fr);
+  gap: var(--space-6);
+  padding-bottom: var(--space-7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-brand-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.footer-tagline {
+  font-size: var(--fs-sm);
+  color: #9AA1B0;
+  max-width: 34ch;
+  line-height: var(--lh-relaxed);
+}
+
+.footer-social {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+
+.footer-social-link:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.footer-social-link svg { width: 18px; height: 18px; }
+
+.footer-col-title {
+  color: var(--color-white);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--space-4);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.footer-link-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.footer-link {
+  font-size: var(--fs-sm);
+  color: #9AA1B0;
+  transition: color var(--dur-fast) var(--ease-out);
+  min-height: 24px;
+}
+
+.footer-link:hover {
+  color: var(--color-primary);
+}
+
+.newsletter-form {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.newsletter-input {
+  flex: 1;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-full);
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-white);
+  font-size: var(--fs-sm);
+  min-height: 46px;
+}
+
+.newsletter-input::placeholder { color: #7C8497; }
+
+.newsletter-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--space-5);
+  font-size: var(--fs-xs);
+  color: #7C8497;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: var(--space-5);
+}
+
+.footer-bottom-links a:hover { color: var(--color-primary); }
+
+/* ---------- Promo Banner ---------- */
+
+.promo-banner {
+  border-radius: var(--radius-xl);
+  padding: var(--space-6) var(--space-7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  background: linear-gradient(120deg, var(--color-dark) 0%, var(--color-dark-soft) 100%);
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.promo-banner::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: -8%;
+  top: -30%;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245, 130, 32, 0.35), transparent 70%);
+}
+
+.promo-banner-text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-width: 480px;
+}
+
+.promo-banner-title {
+  color: var(--color-white);
+  font-size: var(--fs-xl);
+}
+
+.promo-banner-subtitle {
+  color: #B7BECC;
+  font-size: var(--fs-sm);
+}
+
+.promo-banner-cta {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+@media (max-width: 980px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

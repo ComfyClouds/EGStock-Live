@@ -1,0 +1,280 @@
+{
+  "meta": {
+    "title": "Economic Group — Growth Is Our Target",
+    "description": "Trade Egyptian and global markets with Economic Group — a fast, transparent, and secure brokerage platform."
+  },
+  "brand": {
+    "name": "Economic Group"
+  },
+  "nav": {
+    "home": "Home",
+    "markets": "Markets",
+    "markets_overview": "Market Overview",
+    "markets_stocks": "All Stocks",
+    "markets_indices": "Indices",
+    "news": "News",
+    "about": "About Us",
+    "about_company": "Our Company",
+    "about_careers": "Careers",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "login": "Login",
+    "open_account": "Open Account",
+    "live_trading": "Online Live Trading"
+  },
+  "header": {
+    "search_placeholder": "Search stocks, news, or pages…",
+    "search_no_results": "No results found.",
+    "search_news_label": "News"
+  },
+  "hero": {
+    "badge": "Live Market Data",
+    "market_open": "Market Open",
+    "market_closed": "Market Closed",
+    "panel_title": "Live Snapshot",
+    "cta_primary": "Open an Account",
+    "cta_secondary": "Explore Markets"
+  },
+  "sections": {
+    "market_overview_eyebrow": "Real-Time",
+    "market_overview_title": "Market Overview",
+    "market_overview_subtitle": "Track the indices that move the market, updated live from our trading desk.",
+    "gainers_losers_eyebrow": "Today's Movers",
+    "gainers_losers_title": "Top Gainers & Losers",
+    "gainers_losers_subtitle": "The best and worst performing stocks in today's session.",
+    "gainers": "Top Gainers",
+    "losers": "Top Losers",
+    "stocks_eyebrow": "Full List",
+    "stocks_title": "All Stocks",
+    "stocks_subtitle": "Search and track every listed stock in real time.",
+    "news_eyebrow": "Insights",
+    "news_title": "Latest News",
+    "news_subtitle": "Stay ahead with market-moving news and analysis.",
+    "faq_eyebrow": "Support",
+    "faq_title": "Frequently Asked Questions",
+    "faq_subtitle": "Everything you need to know before you start trading.",
+    "contact_eyebrow": "Get in Touch",
+    "contact_title": "Contact Us",
+    "contact_subtitle": "Our team is ready to help you every step of the way.",
+    "tickers_indices": "Indices",
+    "tickers_currencies": "Currencies",
+    "tickers_commodities": "Commodities"
+  },
+  "table": {
+    "symbol": "Symbol",
+    "price": "Price",
+    "change": "Change",
+    "change_percent": "Change %",
+    "volume": "Volume",
+    "high": "High",
+    "low": "Low"
+  },
+  "news": {
+    "read_more": "Read More",
+    "share": "Share:",
+    "close": "Close"
+  },
+  "contact_form": {
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Send Message",
+    "sending": "Sending…",
+    "success": "Thank you — your message has been sent.",
+    "error": "Something went wrong. Please try again.",
+    "required_field": "This field is required.",
+    "invalid_email": "Please enter a valid email address."
+  },
+  "newsletter": {
+    "placeholder": "Your email address",
+    "submit": "Subscribe",
+    "success": "Subscribed successfully!",
+    "already_subscribed": "This email is already subscribed."
+  },
+  "account": {
+    "title": "Open a Trading Account",
+    "subtitle": "Fill in your details below and our operations team will take it from there.",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "address": "Address",
+    "submit": "Register",
+    "sending": "Submitting…",
+    "error": "Something went wrong. Please try again.",
+    "back_to_home": "Back to Home"
+  },
+  "thank_you": {
+    "title": "Your Request Has Been Sent",
+    "message": "Thank you — one of our operations team will contact you within the next 5 business days.",
+    "back_home": "Back to Home"
+  },
+  "footer": {
+    "tagline": "Growth is our target — a transparent brokerage platform built for the modern investor.",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "sitemap": "Sitemap"
+  },
+  "common": {
+    "loading": "Loading…",
+    "view_all": "View All",
+    "back_to_top": "Back to top"
+  },
+  "pages": {
+    "home": {
+      "title": "Economic Group — Growth Is Our Target",
+      "description": "Trade Egyptian and global markets with Economic Group — a fast, transparent, and secure brokerage platform."
+    },
+    "about": {
+      "title": "About Us — Economic Group",
+      "description": "Learn about Economic Group's mission, vision, and core values as a brokerage platform for the Egyptian and global markets."
+    },
+    "board": {
+      "title": "Board of Directors — Economic Group",
+      "description": "Meet the Board of Directors guiding Economic Group's strategy and governance."
+    },
+    "market": {
+      "title": "Stocks & Market — Economic Group",
+      "description": "Live EGX indices, top gainers and losers, and the full list of Egyptian Exchange stocks."
+    },
+    "contact": {
+      "title": "Contact Us & FAQ — Economic Group",
+      "description": "Get in touch with Economic Group and find answers to frequently asked questions about trading and account opening."
+    },
+    "tos": {
+      "title": "Terms of Service — Economic Group",
+      "description": "Terms of Service and Disclaimer for Economic Group brokerage platform."
+    },
+    "privacy": {
+      "title": "Privacy Policy — Economic Group",
+      "description": "Read how Economic Group collects, uses, and protects your personal information on our website and trading platform."
+    }
+  },
+  "about": {
+    "eyebrow": "Who We Are",
+    "title": "About Economic Group",
+    "subtitle": "A brokerage platform built on transparency, speed, and a genuine commitment to our clients' growth.",
+    "intro_title": "Our Story",
+    "intro_body": "Economic Group was founded to give traders and investors in Egypt a brokerage experience that matches the pace of the markets themselves — fast execution, clear pricing, and tools that put real data in front of our clients instead of guesswork. [Replace this paragraph with your company's actual founding story, milestones, and background.]",
+    "mission_title": "Our Mission",
+    "mission_body": "To make trading Egyptian and global markets simple, transparent, and accessible for every investor, regardless of experience level. [Edit to reflect your company's actual mission statement.]",
+    "vision_title": "Our Vision",
+    "vision_body": "To be the most trusted brokerage platform in the Egyptian market, known for reliability, innovation, and putting clients first. [Edit to reflect your company's actual vision statement.]",
+    "values_eyebrow": "What Drives Us",
+    "values_title": "Our Core Values",
+    "values_subtitle": "The principles that shape every decision we make.",
+    "value_1_title": "Transparency",
+    "value_1_body": "Clear pricing, honest communication, and no hidden fees — our clients always know exactly what they're getting.",
+    "value_2_title": "Security",
+    "value_2_body": "Client funds and data are protected with strict security practices, so trading with us always feels safe.",
+    "value_3_title": "Client Focus",
+    "value_3_body": "Every product decision starts with one question: does this genuinely help our clients trade better?",
+    "value_4_title": "Innovation",
+    "value_4_body": "We invest in modern tools and live market data so our clients are never trading on stale information.",
+    "cta_title": "Want to know who leads Economic Group?",
+    "cta_body": "Meet the Board of Directors guiding our strategy and governance.",
+    "cta_button": "Meet the Board"
+  },
+  "board": {
+    "eyebrow": "Governance",
+    "title": "Board of Directors",
+    "subtitle": "The leadership guiding Economic Group's strategy, governance, and long-term direction.",
+    "edit_notice": "Placeholder profiles — replace the names, titles, and biographies below with your actual board members.",
+    "member_1_role": "Chairman of the Board",
+    "member_1_name": "Full Name",
+    "member_1_bio": "Add a short professional biography here — background, experience, and role at Economic Group.",
+    "member_2_role": "Vice Chairman / Managing Director",
+    "member_2_name": "Full Name",
+    "member_2_bio": "Add a short professional biography here — background, experience, and role at Economic Group.",
+    "member_3_role": "Board Member",
+    "member_3_name": "Full Name",
+    "member_3_bio": "Add a short professional biography here.",
+    "member_4_role": "Board Member",
+    "member_4_name": "Full Name",
+    "member_4_bio": "Add a short professional biography here.",
+    "member_5_role": "Board Member",
+    "member_5_name": "Full Name",
+    "member_5_bio": "Add a short professional biography here."
+  },
+  "tos": {
+    "eyebrow": "Legal",
+    "title": "Terms of Service",
+    "subtitle": "Please read these terms carefully before using our platform.",
+    "disclaimer_title": "Disclaimer",
+    "disclaimer_body": "The information provided on our website is not intended for distribution or use by any person or entity in any jurisdiction or country, where such distribution or use would be contrary to any laws or regulations or would subject Economic Group or its affiliates to registration requirements within such jurisdiction or country. Neither the information, nor any opinion contained on this site, constitutes a solicitation or offer by Economic Group or its affiliates to buy or sell any security or to provide any investment advice or service.",
+    "warranty_title": "Disclaimer of Warranty and Limitation of Liability",
+    "warranty_body1": "The information on this site is provided \"as is\" and Economic Group makes no representations, guarantees or a warranty, either express or implied, as to the accuracy of the materials provided herein, and expressly disclaims any warranties of merchantability or fitness for a particular purpose.",
+    "warranty_body2": "Economic Group will not be responsible for any loss or damage that may result from interception by third parties of any information made available to you via our website. The information on this site is obtained or compiled from sources we believe to be reliable but Economic Group cannot, and does not, guarantee the accuracy, validity, timeliness or completeness of any information or data made available to you for any particular purpose.",
+    "warranty_body3": "Neither Economic Group, nor its affiliates, directors, officers and employees or third party vendors will be responsible or liable for any losses or damage that you incur: in the event of any failure or interruption of this site, or resulting from the act or omission of any other party involved in making this site or the data contained therein available to you, or from any other cause relating to your access or inability to access, or use of the site or these materials, whether or not the circumstances giving rise to such cause may have been within the control of Economic Group or any vendor providing software or services support.",
+    "warranty_body4": "Under no circumstances will Economic Group, its affiliates or any such parties, be liable to you for any direct, special, indirect, consequential, incidental damages or any other kind of damages, even if Economic Group or any other party have been advised of the possibility thereof.",
+    "copyright_title": "Copyright or Other Notices",
+    "copyright_body": "If you download any information or software from our website, you agree that you will not copy it or remove or obscure any copyright or other notices and legends contained in any such information.",
+    "links_title": "No Representations Made as to Other Sites or Links",
+    "links_body": "If you leave this site via a link contained herein and view content that is not provided by Economic Group, you will do so at your own risk. The content of other websites has not been developed, checked for accuracy or otherwise reviewed by Economic Group. Accordingly Economic Group is not responsible for damages or losses caused by any delays, defects or omissions that may exist in the services, information or content provided on such external websites, whether actual, alleged, consequential or punitive. Economic Group makes no guarantees or representations and is not liable for any electronic content delivered by a third party, including, without limitation, the accuracy, subject matter, quality or timeliness of such content.",
+    "connectivity_title": "Connectivity and Quality of Access",
+    "connectivity_body": "Transmission problems, system outages and capacity limitations may occur during high levels of Internet traffic, causing delays in order routing, executions and access to research materials. At such times you may experience difficulties in accessing the website or communicating with Economic Group via the Internet or other electronic and wireless services.",
+    "solicitation_title": "Content Not to Be Construed as a Solicitation or Recommendation",
+    "solicitation_body1": "This material has been prepared for informational purposes only, without regard to any client's investment objectives, financial situation or assets, and Economic Group is not soliciting any action based upon such material. The information is not to be construed as: a recommendation; an offer to buy or sell; the solicitation of an offer to buy or sell any security, financial product, or instrument; or an offer to participate in any particular trading strategy in any jurisdiction in which such an offer or solicitation, or trading strategy would be illegal.",
+    "solicitation_body2": "While this material is based upon information that Economic Group considers both reliable and current, Economic Group has not verified this information and does not represent that this material is accurate, current, complete or to be relied upon.",
+    "suitability_title": "No Determination of Suitability Has Been Made. Not All Risks Are Disclosed. Private Advisors Should Be Consulted.",
+    "suitability_body1": "The fact that Economic Group has made the data and services provided on this website available to you constitutes neither a recommendation that you enter into a particular transaction nor a representation that any product described on this site is suitable or appropriate for your needs. Many of the products described involve significant risks, and you should not enter into any transactions unless you have fully understood the risks and have independently determined that such transactions are appropriate for you.",
+    "suitability_body2": "Any discussion of the risks contained herein, in respect of any product or service, should not be considered a disclosure of all the risks or a complete discussion of the risks that are mentioned. You should neither construe any of the material contained herein as business, financial, investment, hedging, trading, legal, regulatory, tax, or accounting advice nor make this service the primary basis for any investment decisions made by or on behalf of you, your accountants, or your managed and fiduciary accounts. You may choose to consult your business advisor, attorney, and tax and accounting advisors concerning any contemplated transactions.",
+    "suitability_body3": "By using this site you agree to our Terms and Conditions, which Economic Group may modify hereafter."
+  },
+  "privacy": {
+    "eyebrow": "Legal",
+    "title": "Privacy Policy",
+    "subtitle": "Please read carefully how we handle your personal information.",
+    "intro_body": "Economic Group may seek certain information about you to assist us in servicing your personalized home page and account. With regard to such personal data, we assure all clients of the following:",
+    "effort_title": "Our Commitment",
+    "effort_body": "We will make every effort to safeguard your privacy while using the Economic Group web site.",
+    "collection_title": "Collection of Information",
+    "collection_body": "We will not collect personal information unless it is specifically and willingly provided but the collection of such data may be a requirement of delivering certain services and information requested by you.",
+    "use_title": "Use of Your Information",
+    "use_body": "Your personal data helps us provide additional information on products, services and content that may be of interest to you. If you do not wish to receive such information, please contact us via our website “Contact Us”.",
+    "correspondence_title": "Correspondence",
+    "correspondence_body1": "If you correspond with us via e-mail, we may keep a copy for internal use.",
+    "correspondence_body2": "A record of communications between you and Economic Group may be necessary to comply with legal and/or regulatory requirements.",
+    "sharing_title": "Sharing of Information",
+    "sharing_body1": "We do not sell personal information to third parties.",
+    "sharing_body2": "We only share personal information if obliged to by law or when, subject to your consent, you request a particular service requiring such disclosure.",
+    "security_title": "How We Protect Your Information",
+    "security_body1": "We protect your personal information by placing it in a secure segment of our website, which is why you need a unique User Name and Password to access your account. Clients are responsible for keeping their passwords safe and must ensure they are not entrusted to, or shared with anyone else.",
+    "security_body2": "All personal and sensitive information is encrypted, both in transit and in storage, to prevent unauthorized access.",
+    "security_body3": "A firewall system also prevents unauthorized back and front office access to sensitive information.",
+    "security_body4": "Total Virus Defense software rigorously scans all information entering and leaving our system.",
+    "links_title": "Other Websites",
+    "links_body": "Economic Group provides links to other websites but is not responsible for the privacy practices or content of those sites."
+  },
+  "app_teaser": {
+    "meta_title": "Economic Group App — Coming Soon",
+    "meta_description": "The Economic Group trading app is on its way. Subscribe to be the first to know when it launches.",
+    "eyebrow": "The Economic Group App",
+    "title": "Trading, Reimagined.",
+    "title_line2": "Coming Soon.",
+    "subtitle": "We're building a faster, simpler way to trade Egyptian and global markets — right from your pocket. Live prices, instant orders, and your full portfolio in one app.",
+    "badge": "Coming Soon",
+    "screen_line1": "ECONOMIC GROUP",
+    "screen_line2": "Coming Soon",
+    "stay_tuned_title": "Stay Tuned",
+    "stay_tuned_body": "We're putting the final touches on the app. Subscribe below so you're the first to know the moment it's live.",
+    "feature1_title": "Live Market Data",
+    "feature1_body": "Real-time EGX and global prices, always at your fingertips.",
+    "feature2_title": "Trade Instantly",
+    "feature2_body": "Place and manage orders in seconds, wherever you are.",
+    "feature3_title": "Your Portfolio, Anywhere",
+    "feature3_body": "Track your holdings and performance on the go.",
+    "feature4_title": "Bank-Grade Security",
+    "feature4_body": "Your data and funds, protected at every step.",
+    "newsletter_title": "Be the First to Know",
+    "newsletter_body": "Leave your email and we'll notify you the moment the app goes live — no spam, ever.",
+    "newsletter_placeholder": "Your email address",
+    "newsletter_submit": "Notify Me",
+    "newsletter_success": "Thanks! We'll let you know as soon as we launch.",
+    "newsletter_already": "This email is already on the list — you're all set!",
+    "newsletter_error": "Something went wrong. Please try again.",
+    "footer_note": "Growth is our target — the app is next."
+  }
+}

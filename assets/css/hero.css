@@ -1,0 +1,236 @@
+/* =========================================================
+   Economic Group — Hero Section
+   ========================================================= */
+
+.hero {
+  position: relative;
+  background: linear-gradient(160deg, var(--color-dark) 0%, var(--color-dark-soft) 55%, #23293A 100%);
+  overflow: hidden;
+  /* FIX 3: no bottom padding on the hero itself — the ticker bar
+     sits flush at the bottom with no extra blue gap beneath it */
+  padding-block-start: var(--space-8);
+  padding-block-end: 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset-inline-end: -12%;
+  top: -18%;
+  width: 620px;
+  height: 620px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245, 130, 32, 0.28) 0%, rgba(245, 130, 32, 0) 70%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--space-8);
+  align-items: center;
+  padding-block-end: var(--space-8);
+}
+
+.hero-slides {
+  position: relative;
+  min-height: 300px;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity var(--dur-slow) var(--ease-out),
+              transform var(--dur-slow) var(--ease-out),
+              visibility var(--dur-slow);
+}
+
+.hero-slide.is-active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: fit-content;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  color: var(--color-white);
+}
+
+.hero-headline {
+  color: var(--color-white);
+  font-size: clamp(2rem, 4vw, var(--fs-4xl));
+  max-width: 22ch;
+}
+
+.hero-headline .accent {
+  color: var(--color-primary);
+}
+
+.hero-subtext {
+  color: #B7BECC;
+  font-size: var(--fs-md);
+  max-width: 46ch;
+}
+
+.hero-cta-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.hero-dots {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.hero-dot {
+  width: 28px;
+  height: 4px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.25);
+  transition: background var(--dur-base) var(--ease-out);
+}
+
+.hero-dot[aria-current="true"] {
+  background: var(--color-primary);
+}
+
+/* ---------- Hero Panel (Live Market Snapshot) ---------- */
+
+.hero-panel {
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.hero-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-panel-title {
+  color: var(--color-white);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+}
+
+.hero-status {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-xs);
+  color: #B7BECC;
+  font-weight: var(--fw-medium);
+}
+
+.hero-tv-widget {
+  width: 100%;
+  min-height: 260px;
+}
+
+.hero-tv-widget .tradingview-widget-container,
+.hero-tv-widget .tradingview-widget-container__widget {
+  width: 100%;
+}
+
+/* TradingView's copyright line defaults to dark text — barely visible on
+   this panel's dark glass background, so lighten it to match. */
+.hero-tv-widget .tradingview-widget-copyright {
+  color: #B7BECC;
+}
+
+/* ---------- Announcements Ticker ---------- */
+
+.ticker-bar {
+  background: var(--color-dark-elevated);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  position: relative;
+}
+
+.ticker-bar::before,
+.ticker-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.ticker-bar::before {
+  inset-inline-start: 0;
+  background: linear-gradient(to right, var(--color-dark-elevated), transparent);
+}
+
+.ticker-bar::after {
+  inset-inline-end: 0;
+  background: linear-gradient(to left, var(--color-dark-elevated), transparent);
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: tickerScroll 38s linear infinite;
+  padding-block: var(--space-3);
+}
+
+.ticker-bar:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+.ticker-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding-inline: var(--space-6);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  color: #C7CCD6;
+  white-space: nowrap;
+  border-inline-end: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ticker-item svg { width: 14px; height: 14px; color: var(--color-primary); flex-shrink: 0; }
+
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+}
+.ticker-bar:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+/* Exception to the sitewide prefers-reduced-motion reset in base.css:
+   this marquee is treated as decorative/informational content rather than
+   motion that could trigger discomfort, so it keeps scrolling. Hover-to-pause
+   above still applies either way. */
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track {
+    animation-duration: 38s !important;
+    animation-iteration-count: infinite !important;
+  }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us & FAQ — Economic Group</title>
+  <meta name="description" content="Get in touch with Economic Group and find answers to frequently asked questions about trading and account opening.">
+  <meta name="theme-color" content="#0A2647">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.stock-example.com/contact.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact Us & FAQ — Economic Group">
+  <meta property="og:description" content="Get in touch with Economic Group and find answers to frequently asked questions about trading and account opening.">
+  <meta property="og:url" content="https://www.stock-example.com/contact.html">
+  <meta property="og:site_name" content="Economic Group">
+  <meta property="og:image" content="assets/images/og-cover.jpg">
+  <meta property="og:locale" content="ar_EG">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/brand/favicon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Design System -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/faq.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body id="top" data-page="contact">
+  <a href="#main-content" class="skip-link" data-i18n="common.back_to_top">Skip to content</a>
+
+  <div id="header-mount"></div>
+
+  <main id="main-content">
+
+    <!-- ============ PAGE HEADER ============ -->
+    <section class="page-header" aria-labelledby="contact-page-title">
+      <div class="container">
+        <div class="section-header" style="margin-bottom:0;">
+          <span class="section-eyebrow" data-i18n="sections.contact_eyebrow">Get in Touch</span>
+          <h1 class="section-title" id="contact-page-title" data-i18n="pages.contact.title">Contact Us & FAQ</h1>
+          <p class="section-subtitle" data-i18n="sections.contact_subtitle">Our team is ready to help you every step of the way.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow" data-i18n="sections.faq_eyebrow">Support</span>
+          <h2 class="section-title" id="faq-title" data-i18n="sections.faq_title">Frequently Asked Questions</h2>
+          <p class="section-subtitle" data-i18n="sections.faq_subtitle">Everything you need to know before you start trading.</p>
+        </div>
+
+        <div class="faq-tabs" id="faq-tabs" role="tablist"></div>
+        <div class="faq-list" id="faq-list" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" style="background:var(--color-white);" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow" data-i18n="sections.contact_eyebrow">Get in Touch</span>
+          <h2 class="section-title" id="contact-title" data-i18n="sections.contact_title">Contact Us</h2>
+          <p class="section-subtitle" data-i18n="sections.contact_subtitle">Our team is ready to help you every step of the way.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-list" id="contact-info-list" aria-live="polite"></div>
+
+          <form class="card contact-form" id="contact-form" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-label" for="contact-name" data-i18n="contact_form.name">Full Name <span class="required">*</span></label>
+                <input type="text" id="contact-name" class="form-input" required autocomplete="name">
+                <span class="form-error-msg" role="alert"></span>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="contact-email" data-i18n="contact_form.email">Email Address <span class="required">*</span></label>
+                <input type="email" id="contact-email" class="form-input" required autocomplete="email">
+                <span class="form-error-msg" role="alert"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-label" for="contact-phone" data-i18n="contact_form.phone">Phone Number</label>
+                <input type="tel" id="contact-phone" class="form-input" autocomplete="tel">
+                <span class="form-error-msg" role="alert"></span>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="contact-subject" data-i18n="contact_form.subject">Subject</label>
+                <input type="text" id="contact-subject" class="form-input">
+                <span class="form-error-msg" role="alert"></span>
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="contact-message" data-i18n="contact_form.message">Message <span class="required">*</span></label>
+              <textarea id="contact-message" class="form-textarea" required></textarea>
+              <span class="form-error-msg" role="alert"></span>
+            </div>
+            <div class="form-submit-row">
+              <button type="submit" class="btn btn-primary" data-i18n="contact_form.submit">Send Message</button>
+              <span class="form-status" id="contact-form-status" role="status" aria-live="polite"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-mount"></div>
+  <div id="news-modal-mount"></div>
+
+  <button type="button" class="btn-icon" id="back-to-top" aria-label="Back to top" data-i18n-aria-label="common.back_to_top"
+    style="position:fixed; bottom:24px; inset-inline-end:24px; z-index:var(--z-toast); background:var(--color-dark); color:#fff; opacity:0; visibility:hidden; transition: opacity var(--dur-base) var(--ease-out), visibility var(--dur-base); box-shadow:var(--shadow-lg);">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </button>
+
+  <style>
+    #back-to-top.is-visible { opacity: 1; visibility: visible; }
+  </style>
+
+  <!-- Config & Utilities -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/sheetsApi.js"></script>
+  <script src="assets/js/skeleton.js"></script>
+  <script src="assets/js/lazyload.js"></script>
+  <script src="assets/js/partials.js"></script>
+
+  <!-- Components -->
+  <script src="components/newsCard.js"></script>
+  <script src="components/miniTickerCard.js"></script>
+  <script src="components/faqItem.js"></script>
+
+  <!-- Section Modules -->
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/hero.js"></script>
+  <script src="assets/js/liveMarketData.js"></script>
+  <script src="assets/js/tradingViewWidgets.js"></script>
+  <script src="assets/js/market.js"></script>
+  <script src="assets/js/news.js"></script>
+  <script src="assets/js/newsModal.js"></script>
+  <script src="assets/js/faq.js"></script>
+  <script src="assets/js/contact.js"></script>
+  <script src="assets/js/autoRefresh.js"></script>
+
+  <!-- Boot -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

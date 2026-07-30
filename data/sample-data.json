@@ -1,0 +1,183 @@
+{
+  "Markets": [
+    { "ID": "EGX30", "Name_EN": "EGX 30", "Name_AR": "إي جي إكس 30", "Value": 30845.62, "Change": 214.35, "ChangePercent": 0.70, "Direction": "up", "Volume": 1284000000, "Icon": "trending-up", "Order": 1, "Published": true },
+    { "ID": "EGX70", "Name_EN": "EGX 70", "Name_AR": "إي جي إكس 70", "Value": 5321.18, "Change": -18.42, "ChangePercent": -0.35, "Direction": "down", "Volume": 421000000, "Icon": "bar-chart", "Order": 2, "Published": true },
+    { "ID": "EGX100", "Name_EN": "EGX 100", "Name_AR": "إي جي إكس 100", "Value": 8123.94, "Change": 42.11, "ChangePercent": 0.52, "Direction": "up", "Volume": 902000000, "Icon": "layers", "Order": 3, "Published": true },
+    { "ID": "MKT_CAP", "Name_EN": "Total Market Cap", "Name_AR": "إجمالي القيمة السوقية", "Value": 2184300000000, "Change": 0, "ChangePercent": 0, "Direction": "flat", "Volume": 0, "Icon": "landmark", "Order": 4, "Published": true }
+  ],
+
+  "News": [
+    {
+      "ID": "N001",
+      "Image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop",
+      "CategoryEN": "Markets", "CategoryAR": "الأسواق",
+      "TitleEN": "EGX30 closes higher as banking stocks rally",
+      "TitleAR": "المؤشر الرئيسي يغلق مرتفعاً بدعم من أسهم البنوك",
+      "SummaryEN": "The benchmark index gained ground in Thursday's session, led by strong performance in the banking and telecom sectors.",
+      "SummaryAR": "سجل المؤشر الرئيسي مكاسب خلال جلسة الخميس، بقيادة أداء قوي في قطاعي البنوك والاتصالات.",
+      "ContentEN": "<p>The EGX30 index closed 0.70% higher on Thursday, extending its gains for a third consecutive session as investors continued to rotate into blue-chip banking names.</p><p>Trading volume rose to EGP 1.28 billion, well above the 30-day average, as both local and foreign institutional investors increased their exposure ahead of upcoming earnings releases.</p><p>Analysts pointed to improving liquidity conditions and a more stable currency environment as key drivers behind the renewed investor confidence.</p>",
+      "ContentAR": "<p>أغلق المؤشر الرئيسي للبورصة المصرية مرتفعاً بنسبة 0.70% يوم الخميس، ليواصل مكاسبه للجلسة الثالثة على التوالي مع استمرار المستثمرين في التوجه نحو الأسهم القيادية في قطاع البنوك.</p><p>ارتفع حجم التداول إلى 1.28 مليار جنيه، متجاوزاً متوسط الثلاثين يوماً الماضية، مع زيادة المستثمرين المؤسسيين المحليين والأجانب لمراكزهم قبل إعلان نتائج الأعمال القادمة.</p><p>وأشار المحللون إلى تحسن ظروف السيولة واستقرار بيئة العملة كعوامل رئيسية وراء تجدد ثقة المستثمرين.</p>",
+      "Date": "2026-07-21", "Featured": true, "Published": true, "Order": 1
+    },
+    {
+      "ID": "N002",
+      "Image": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=1200&auto=format&fit=crop",
+      "CategoryEN": "Currencies", "CategoryAR": "العملات",
+      "TitleEN": "Egyptian pound holds steady against the dollar",
+      "TitleAR": "الجنيه المصري يحافظ على استقراره أمام الدولار",
+      "SummaryEN": "The local currency traded within a tight range this week as the central bank maintained its current policy stance.",
+      "SummaryAR": "تداولت العملة المحلية في نطاق ضيق هذا الأسبوع مع محافظة البنك المركزي على موقفه الحالي من السياسة النقدية.",
+      "ContentEN": "<p>The Egyptian pound remained broadly stable against the US dollar this week, trading in a narrow band on the interbank market.</p><p>Currency strategists say the stability reflects steady inflows from tourism and remittances, alongside continued central bank intervention to smooth volatility.</p>",
+      "ContentAR": "<p>ظل الجنيه المصري مستقراً بشكل عام أمام الدولار الأمريكي هذا الأسبوع، متداولاً في نطاق ضيق بسوق ما بين البنوك.</p><p>ويقول محللو العملة إن هذا الاستقرار يعكس تدفقات ثابتة من السياحة والتحويلات، إلى جانب استمرار تدخل البنك المركزي لتنظيم التقلبات.</p>",
+      "Date": "2026-07-20", "Featured": false, "Published": true, "Order": 2
+    },
+    {
+      "ID": "N003",
+      "Image": "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=1200&auto=format&fit=crop",
+      "CategoryEN": "Company News", "CategoryAR": "أخبار الشركات",
+      "TitleEN": "Telecom Egypt reports strong quarterly earnings",
+      "TitleAR": "المصرية للاتصالات تعلن نتائج فصلية قوية",
+      "SummaryEN": "The company posted double-digit revenue growth, driven by expansion in its data and fixed-line broadband segments.",
+      "SummaryAR": "سجلت الشركة نمواً بمعدلات مزدوجة في الإيرادات، مدفوعاً بالتوسع في قطاعي البيانات والإنترنت الثابت.",
+      "ContentEN": "<p>Telecom Egypt reported a 14% year-on-year increase in consolidated revenue for the quarter, beating analyst expectations.</p><p>Management attributed the growth to accelerating broadband subscriber additions and higher data consumption across its mobile arm.</p>",
+      "ContentAR": "<p>أعلنت المصرية للاتصالات عن ارتفاع الإيرادات الموحدة بنسبة 14% على أساس سنوي خلال الربع، متجاوزة توقعات المحللين.</p><p>وعزت الإدارة هذا النمو إلى تسارع إضافة مشتركي الإنترنت الثابت وارتفاع استهلاك البيانات عبر ذراعها للاتصالات المتنقلة.</p>",
+      "Date": "2026-07-18", "Featured": false, "Published": true, "Order": 3
+    },
+    {
+      "ID": "N004",
+      "Image": "https://images.unsplash.com/photo-1642543348745-03b1219733d9?q=80&w=1200&auto=format&fit=crop",
+      "CategoryEN": "Regulation", "CategoryAR": "تشريعات",
+      "TitleEN": "FRA introduces new rules for margin trading",
+      "TitleAR": "الرقابة المالية تصدر قواعد جديدة للتداول بالهامش",
+      "SummaryEN": "The Financial Regulatory Authority announced updated guidelines aimed at strengthening investor protection.",
+      "SummaryAR": "أعلنت الهيئة العامة للرقابة المالية عن قواعد محدثة تهدف إلى تعزيز حماية المستثمرين.",
+      "ContentEN": "<p>Egypt's Financial Regulatory Authority unveiled a revised framework for margin trading, introducing tighter collateral requirements for retail accounts.</p><p>The new rules take effect next quarter and are designed to reduce systemic risk during periods of high volatility.</p>",
+      "ContentAR": "<p>كشفت الهيئة العامة للرقابة المالية عن إطار عمل محدث للتداول بالهامش، يتضمن متطلبات ضمانات أكثر صرامة للحسابات الفردية.</p><p>وتدخل القواعد الجديدة حيز التنفيذ اعتباراً من الربع القادم، وتهدف إلى تقليل المخاطر النظامية خلال فترات التقلب الشديد.</p>",
+      "Date": "2026-07-15", "Featured": false, "Published": true, "Order": 4
+    }
+  ],
+
+  "Announcements": [
+    { "ID": "A1", "TitleEN": "Q2 earnings season begins next week — schedule now live", "TitleAR": "موسم إعلان نتائج الربع الثاني يبدأ الأسبوع القادم — الجدول متاح الآن", "Type": "info", "LinkURL": "#news", "Published": true, "Order": 1 },
+    { "ID": "A2", "TitleEN": "System maintenance scheduled for Friday 11:00 PM – 1:00 AM", "TitleAR": "صيانة مجدولة للنظام يوم الجمعة من ١١:٠٠ مساءً حتى ١:٠٠ صباحاً", "Type": "warning", "LinkURL": "#", "Published": true, "Order": 2 },
+    { "ID": "A3", "TitleEN": "New sector classification now available for all listed stocks", "TitleAR": "تصنيف قطاعي جديد متاح الآن لجميع الأسهم المدرجة", "Type": "info", "LinkURL": "#stocks", "Published": true, "Order": 3 },
+    { "ID": "A4", "TitleEN": "Zero commission on your first trade this month", "TitleAR": "بدون عمولة على أول صفقة تداول هذا الشهر", "Type": "info", "LinkURL": "#contact", "Published": true, "Order": 4 }
+  ],
+
+  "Sliders": [
+    {
+      "ID": "S1",
+      "HeadlineEN": "Trade the market with total confidence",
+      "HeadlineAR": "تداول في السوق بثقة تامة",
+      "SubtextEN": "Real-time pricing, transparent fees, and a platform built around you.",
+      "SubtextAR": "أسعار لحظية، رسوم شفافة، ومنصة مصممة من أجلك.",
+      "Image": "", "CTALabelEN": "Open an Account", "CTALabelAR": "افتح حسابك", "CTAUrl": "pages/signup.html",
+      "Published": true, "Order": 1
+    },
+    {
+      "ID": "S2",
+      "HeadlineEN": "Insights that move as fast as the market",
+      "HeadlineAR": "تحليلات تتحرك بسرعة السوق نفسها",
+      "SubtextEN": "Curated news and research to help you make informed decisions.",
+      "SubtextAR": "أخبار وتحليلات منتقاة بعناية لمساعدتك على اتخاذ قرارات مدروسة.",
+      "Image": "", "CTALabelEN": "Read Latest News", "CTALabelAR": "اقرأ آخر الأخبار", "CTAUrl": "#news",
+      "Published": true, "Order": 2
+    },
+    {
+      "ID": "S3",
+      "HeadlineEN": "One dashboard for every market you follow",
+      "HeadlineAR": "لوحة تحكم واحدة لكل الأسواق التي تتابعها",
+      "SubtextEN": "Stocks, indices, currencies, and commodities — all in one place.",
+      "SubtextAR": "الأسهم والمؤشرات والعملات والسلع — كلها في مكان واحد.",
+      "Image": "", "CTALabelEN": "Explore Markets", "CTALabelAR": "استكشف الأسواق", "CTAUrl": "#markets",
+      "Published": true, "Order": 3
+    }
+  ],
+
+  "MarketStatus": [
+    { "Market": "EGX", "StatusEN": "Market Open", "StatusAR": "السوق مفتوح", "IsOpen": true, "OpensAt": "10:00", "ClosesAt": "14:30", "Timezone": "Africa/Cairo", "LastUpdated": "2026-07-23T12:40:00+02:00" }
+  ],
+
+  "Stocks": [
+    { "Symbol": "COMI", "NameEN": "Commercial International Bank", "NameAR": "البنك التجاري الدولي", "SectorEN": "Banking", "SectorAR": "بنوك", "Price": 91.45, "Change": 1.85, "ChangePercent": 2.07, "Open": 89.90, "High": 92.10, "Low": 89.50, "PrevClose": 89.60, "Volume": 5230000, "MarketCap": 251000000000, "Direction": "up", "Published": true },
+    { "Symbol": "HRHO", "NameEN": "EFG Hermes Holding", "NameAR": "المجموعة المالية هيرميس", "SectorEN": "Financial Services", "SectorAR": "خدمات مالية", "Price": 24.12, "Change": -0.38, "ChangePercent": -1.55, "Open": 24.60, "High": 24.75, "Low": 23.95, "PrevClose": 24.50, "Volume": 3120000, "MarketCap": 34500000000, "Direction": "down", "Published": true },
+    { "Symbol": "TMGH", "NameEN": "Talaat Moustafa Group", "NameAR": "مجموعة طلعت مصطفى", "SectorEN": "Real Estate", "SectorAR": "عقارات", "Price": 43.77, "Change": 0.92, "ChangePercent": 2.15, "Open": 42.85, "High": 44.10, "Low": 42.70, "PrevClose": 42.85, "Volume": 2870000, "MarketCap": 61200000000, "Direction": "up", "Published": true },
+    { "Symbol": "SWDY", "NameEN": "Elsewedy Electric", "NameAR": "السويدي إليكتريك", "SectorEN": "Industrials", "SectorAR": "صناعات", "Price": 68.30, "Change": -1.10, "ChangePercent": -1.58, "Open": 69.60, "High": 69.90, "Low": 68.05, "PrevClose": 69.40, "Volume": 1940000, "MarketCap": 88300000000, "Direction": "down", "Published": true },
+    { "Symbol": "ETEL", "NameEN": "Telecom Egypt", "NameAR": "المصرية للاتصالات", "SectorEN": "Telecom", "SectorAR": "اتصالات", "Price": 21.64, "Change": 0.44, "ChangePercent": 2.08, "Open": 21.20, "High": 21.80, "Low": 21.15, "PrevClose": 21.20, "Volume": 4310000, "MarketCap": 43800000000, "Direction": "up", "Published": true },
+    { "Symbol": "ABUK", "NameEN": "Abu Qir Fertilizers", "NameAR": "أبو قير للأسمدة", "SectorEN": "Chemicals", "SectorAR": "كيماويات", "Price": 55.90, "Change": 0.00, "ChangePercent": 0.00, "Open": 55.90, "High": 56.40, "Low": 55.60, "PrevClose": 55.90, "Volume": 980000, "MarketCap": 39900000000, "Direction": "flat", "Published": true },
+    { "Symbol": "ORWE", "NameEN": "Oriental Weavers", "NameAR": "الشرقيين للسجاد", "SectorEN": "Consumer Goods", "SectorAR": "سلع استهلاكية", "Price": 12.38, "Change": -0.22, "ChangePercent": -1.75, "Open": 12.65, "High": 12.70, "Low": 12.30, "PrevClose": 12.60, "Volume": 1120000, "MarketCap": 6100000000, "Direction": "down", "Published": true },
+    { "Symbol": "EAST", "NameEN": "Eastern Company", "NameAR": "الشرقية للدخان", "SectorEN": "Consumer Goods", "SectorAR": "سلع استهلاكية", "Price": 19.05, "Change": 0.65, "ChangePercent": 3.53, "Open": 18.30, "High": 19.20, "Low": 18.25, "PrevClose": 18.40, "Volume": 2640000, "MarketCap": 66700000000, "Direction": "up", "Published": true }
+  ],
+
+  "Indices": [
+    { "Code": "EGX30", "NameEN": "EGX 30", "NameAR": "إي جي إكس 30", "Value": 30845.62, "ChangePercent": 0.70, "Direction": "up", "Order": 1, "Published": true },
+    { "Code": "EGX70", "NameEN": "EGX 70", "NameAR": "إي جي إكس 70", "Value": 5321.18, "ChangePercent": -0.35, "Direction": "down", "Order": 2, "Published": true },
+    { "Code": "EGX100", "NameEN": "EGX 100", "NameAR": "إي جي إكس 100", "Value": 8123.94, "ChangePercent": 0.52, "Direction": "up", "Order": 3, "Published": true },
+    { "Code": "NILE30", "NameEN": "Nile 30", "NameAR": "نايل 30", "Value": 4218.77, "ChangePercent": 0.18, "Direction": "up", "Order": 4, "Published": true }
+  ],
+
+  "Currencies": [
+    { "Pair": "USD/EGP", "NameEN": "US Dollar", "NameAR": "الدولار الأمريكي", "Rate": 48.91, "ChangePercent": 0.06, "Direction": "up", "Order": 1, "Published": true },
+    { "Pair": "EUR/EGP", "NameEN": "Euro", "NameAR": "اليورو", "Rate": 53.24, "ChangePercent": -0.12, "Direction": "down", "Order": 2, "Published": true },
+    { "Pair": "GBP/EGP", "NameEN": "British Pound", "NameAR": "الجنيه الإسترليني", "Rate": 62.05, "ChangePercent": 0.09, "Direction": "up", "Order": 3, "Published": true },
+    { "Pair": "SAR/EGP", "NameEN": "Saudi Riyal", "NameAR": "الريال السعودي", "Rate": 13.04, "ChangePercent": 0.02, "Direction": "flat", "Order": 4, "Published": true }
+  ],
+
+  "Commodities": [
+    { "Code": "XAU", "NameEN": "Gold", "NameAR": "الذهب", "Price": 2412.60, "Unit": "oz", "ChangePercent": 0.34, "Direction": "up", "Order": 1, "Published": true },
+    { "Code": "XAG", "NameEN": "Silver", "NameAR": "الفضة", "Price": 28.91, "Unit": "oz", "ChangePercent": -0.21, "Direction": "down", "Order": 2, "Published": true },
+    { "Code": "BRENT", "NameEN": "Brent Crude Oil", "NameAR": "خام برنت", "Price": 84.32, "Unit": "barrel", "ChangePercent": 1.02, "Direction": "up", "Order": 3, "Published": true },
+    { "Code": "NG", "NameEN": "Natural Gas", "NameAR": "الغاز الطبيعي", "Price": 2.87, "Unit": "MMBtu", "ChangePercent": -0.55, "Direction": "down", "Order": 4, "Published": true }
+  ],
+
+  "FAQs": [
+    { "ID": "F1", "CategoryEN": "Getting Started", "CategoryAR": "البدء", "QuestionEN": "How do I open a trading account?", "QuestionAR": "كيف أفتح حساب تداول؟", "AnswerEN": "You can open an account directly through the Contact section — submit your details and our onboarding team will reach out within one business day with the required documents and next steps.", "AnswerAR": "يمكنك فتح حساب مباشرة من خلال قسم التواصل معنا — أرسل بياناتك وسيتواصل معك فريقنا خلال يوم عمل واحد مع المستندات المطلوبة والخطوات التالية.", "Order": 1, "Published": true },
+    { "ID": "F2", "CategoryEN": "Getting Started", "CategoryAR": "البدء", "QuestionEN": "What is the minimum deposit required?", "QuestionAR": "ما هو الحد الأدنى للإيداع المطلوب؟", "AnswerEN": "There is no mandatory minimum deposit for a standard cash account. Margin accounts require a minimum maintenance balance, which our team will explain during onboarding.", "AnswerAR": "لا يوجد حد أدنى إلزامي للإيداع في الحساب النقدي العادي. تتطلب حسابات الهامش رصيداً أدنى للمحافظة عليه، وسيشرح لك فريقنا ذلك أثناء عملية فتح الحساب.", "Order": 2, "Published": true },
+    { "ID": "F3", "CategoryEN": "Trading", "CategoryAR": "التداول", "QuestionEN": "What are the trading hours?", "QuestionAR": "ما هي ساعات التداول؟", "AnswerEN": "The Egyptian Exchange operates from 10:00 AM to 2:30 PM Cairo time, Sunday through Thursday, excluding public holidays.", "AnswerAR": "تعمل البورصة المصرية من الساعة ١٠:٠٠ صباحاً حتى ٢:٣٠ مساءً بتوقيت القاهرة، من الأحد إلى الخميس، باستثناء العطلات الرسمية.", "Order": 3, "Published": true },
+    { "ID": "F4", "CategoryEN": "Trading", "CategoryAR": "التداول", "QuestionEN": "Can I trade on margin?", "QuestionAR": "هل يمكنني التداول بالهامش؟", "AnswerEN": "Yes, margin trading is available for eligible accounts subject to the Financial Regulatory Authority's collateral requirements and our internal risk policies.", "AnswerAR": "نعم، التداول بالهامش متاح للحسابات المؤهلة وفقاً لمتطلبات الضمانات الصادرة عن الهيئة العامة للرقابة المالية وسياسات إدارة المخاطر الداخلية لدينا.", "Order": 4, "Published": true },
+    { "ID": "F5", "CategoryEN": "Fees", "CategoryAR": "الرسوم", "QuestionEN": "What commission do you charge per trade?", "QuestionAR": "ما هي العمولة التي تتقاضونها على كل صفقة؟", "AnswerEN": "Our standard commission is competitive and tiered by monthly trading volume. Exact rates are shared during account setup and are always disclosed before you confirm a trade.", "AnswerAR": "عمولتنا القياسية تنافسية ومتدرجة حسب حجم التداول الشهري. يتم مشاركة الأسعار الدقيقة أثناء إعداد الحساب، ويتم الإفصاح عنها دائماً قبل تأكيد أي صفقة.", "Order": 5, "Published": true },
+    { "ID": "F6", "CategoryEN": "Security", "CategoryAR": "الأمان", "QuestionEN": "Is my money and data secure?", "QuestionAR": "هل أموالي وبياناتي آمنة؟", "AnswerEN": "Client funds are held in segregated accounts in accordance with regulatory requirements, and all platform traffic is encrypted end-to-end.", "AnswerAR": "يتم الاحتفاظ بأموال العملاء في حسابات منفصلة وفقاً للمتطلبات التنظيمية، وجميع بيانات المنصة مشفرة بالكامل.", "Order": 6, "Published": true }
+  ],
+
+  "FooterLinks": [
+    { "ID": "FL1", "ColumnEN": "Company", "ColumnAR": "الشركة", "LabelEN": "About Us", "LabelAR": "من نحن", "Url": "#about", "Order": 1, "Published": true },
+    { "ID": "FL2", "ColumnEN": "Company", "ColumnAR": "الشركة", "LabelEN": "Careers", "LabelAR": "الوظائف", "Url": "#", "Order": 2, "Published": true },
+    { "ID": "FL3", "ColumnEN": "Company", "ColumnAR": "الشركة", "LabelEN": "Press", "LabelAR": "الإعلام", "Url": "#", "Order": 3, "Published": true },
+    { "ID": "FL4", "ColumnEN": "Markets", "ColumnAR": "الأسواق", "LabelEN": "Stocks", "LabelAR": "الأسهم", "Url": "#stocks", "Order": 1, "Published": true },
+    { "ID": "FL5", "ColumnEN": "Markets", "ColumnAR": "الأسواق", "LabelEN": "Indices", "LabelAR": "المؤشرات", "Url": "#markets", "Order": 2, "Published": true },
+    { "ID": "FL6", "ColumnEN": "Markets", "ColumnAR": "الأسواق", "LabelEN": "News", "LabelAR": "الأخبار", "Url": "#news", "Order": 3, "Published": true },
+    { "ID": "FL7", "ColumnEN": "Support", "ColumnAR": "الدعم", "LabelEN": "FAQ", "LabelAR": "الأسئلة الشائعة", "Url": "#faq", "Order": 1, "Published": true },
+    { "ID": "FL8", "ColumnEN": "Support", "ColumnAR": "الدعم", "LabelEN": "Contact Us", "LabelAR": "تواصل معنا", "Url": "#contact", "Order": 2, "Published": true },
+    { "ID": "FL9", "ColumnEN": "Support", "ColumnAR": "الدعم", "LabelEN": "Open an Account", "LabelAR": "افتح حسابك", "Url": "pages/signup.html", "Order": 3, "Published": true }
+  ],
+
+  "Navigation": [
+    { "ID": "NV1", "LabelEN": "Home", "LabelAR": "الرئيسية", "Url": "#top", "ParentID": "", "Order": 1, "Published": true },
+    { "ID": "NV2", "LabelEN": "Markets", "LabelAR": "الأسواق", "Url": "#markets", "ParentID": "", "Order": 2, "Published": true },
+    { "ID": "NV2A", "LabelEN": "Market Overview", "LabelAR": "نظرة عامة على السوق", "Url": "#markets", "ParentID": "NV2", "Order": 1, "Published": true },
+    { "ID": "NV2B", "LabelEN": "All Stocks", "LabelAR": "جميع الأسهم", "Url": "#stocks", "ParentID": "NV2", "Order": 2, "Published": true },
+    { "ID": "NV2C", "LabelEN": "Top Movers", "LabelAR": "الأكثر تحركاً", "Url": "#movers", "ParentID": "NV2", "Order": 3, "Published": true },
+    { "ID": "NV3", "LabelEN": "News", "LabelAR": "الأخبار", "Url": "#news", "ParentID": "", "Order": 3, "Published": true },
+    { "ID": "NV4", "LabelEN": "FAQ", "LabelAR": "الأسئلة الشائعة", "Url": "#faq", "ParentID": "", "Order": 4, "Published": true },
+    { "ID": "NV5", "LabelEN": "Contact", "LabelAR": "تواصل معنا", "Url": "#contact", "ParentID": "", "Order": 5, "Published": true }
+  ],
+
+  "SocialLinks": [
+    { "Platform": "facebook", "Url": "https://facebook.com", "Order": 1, "Published": true },
+    { "Platform": "x", "Url": "https://x.com", "Order": 2, "Published": true },
+    { "Platform": "linkedin", "Url": "https://linkedin.com", "Order": 3, "Published": true },
+    { "Platform": "youtube", "Url": "https://youtube.com", "Order": 4, "Published": true }
+  ],
+
+  "Languages": [
+    { "Code": "ar", "LabelNative": "العربية", "Direction": "rtl", "IsDefault": true, "Published": true },
+    { "Code": "en", "LabelNative": "English", "Direction": "ltr", "IsDefault": false, "Published": true }
+  ],
+
+  "ContactInformation": [
+    { "LabelEN": "Head Office", "LabelAR": "المقر الرئيسي", "Type": "address", "ValueEN": "Nile Corniche, Cairo, Egypt", "ValueAR": "كورنيش النيل، القاهرة، مصر", "Icon": "map-pin", "Order": 1 },
+    { "LabelEN": "Client Support", "LabelAR": "دعم العملاء", "Type": "phone", "ValueEN": "+20 2 1000 0000", "ValueAR": "+20 2 1000 0000", "Icon": "phone", "Order": 2 },
+    { "LabelEN": "Email Us", "LabelAR": "راسلنا", "Type": "email", "ValueEN": "support@stock.example.com", "ValueAR": "support@stock.example.com", "Icon": "mail", "Order": 3 },
+    { "LabelEN": "Trading Hours", "LabelAR": "ساعات التداول", "Type": "hours", "ValueEN": "Sun–Thu, 10:00 AM – 2:30 PM", "ValueAR": "الأحد–الخميس، ١٠:٠٠ صباحاً – ٢:٣٠ مساءً", "Icon": "clock", "Order": 4 }
+  ]
+}
