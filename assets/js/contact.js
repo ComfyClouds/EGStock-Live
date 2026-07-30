@@ -20,12 +20,18 @@
       .map((item) => {
         const label = lang === 'ar' ? item.LabelAR : item.LabelEN;
         const value = lang === 'ar' ? item.ValueAR : item.ValueEN;
+        const mapUrl = item.MapURL || item.GoogleMapsURL || item.MapLink;
+
+        const valueHtml = mapUrl
+          ? `<a href="${escapeHtml(mapUrl)}" target="_blank" rel="noopener noreferrer" class="contact-info-link">${escapeHtml(value)}</a>`
+          : escapeHtml(value);
+
         return `
           <div class="card contact-info-card" data-reveal>
             <span class="contact-info-icon">${window.StockIcons.icon(item.Icon || 'map-pin')}</span>
             <div>
               <div class="contact-info-label">${escapeHtml(label)}</div>
-              <div class="contact-info-value">${escapeHtml(value)}</div>
+              <div class="contact-info-value">${valueHtml}</div>
             </div>
           </div>`;
       })
